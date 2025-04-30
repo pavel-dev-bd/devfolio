@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devfolio </title>
+    <!--  Font-awesome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Swiper css -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Main css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Preloader                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="preloader" >
+      <button class="theme-btn style1 rounded-0 preloaderCls">Cancel Preloader</button>
+      <div class="preloader-inner">
+        <img src="./assets/images/logo/logo.svg" alt="logo">
+        <span class="loader"></span>
+      </div>
+    </div>
+     <!-- ----------------------------------------------------------------------- -->
+    <!--                                Mouse Cursor                              -->
+    <!-- -----------------------------------------------------------------------  -->
+     <div class="d-none d-lg-block" id="cursor"></div>
+     <div class="d-none d-lg-block" id="cursor-border"></div>
+     
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Progress                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="progress-wrap  d-md-block">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 69.4775;"></path>
+      </svg>
+    </div>
+     <!-- ----------------------------------------------------------------------- -->
+    <!--                            Portfolio titles Area start                   -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="portfolio__titles" style="left: 233px; top: 407px;"><span>Designing</span><p>Paper Book Covers</p></div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Header Area start                            -->
+    <!-- ----------------------------------------------------------------------- -->
+  <!-- <div id="scroll-container">  -->
+    <header id="header" class="header bg-black ">
+      <div class="container  ">
+        <div class="header__main">
+          <div class="row align-items-center justify-content-md-between">
+            <div class="col-md-3 col-6">
+              <a class="header__logo" href="/">
+                <img src="./assets/images/logo/logo.svg" alt="logo" />
+                
+              </a>
+            </div>
+            <div class="col-md-6 d-none d-lg-block">
+              <div class="header__main-menu">
+                <nav id="navbarNav" class="circle nav-bg">
+                  <ul>
+                    <li class="active has-menu">
+                      <a href="#">
+                        Home
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                        <li><a href="/">Home 1</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/about-me.html"> About Me </a>
+                    </li>
+                    <li class="has-menu">
+                      <a href="#">
+                        Pages
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                        <li class="has-menu">
+                          <a href="#">
+                            Services
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                          <ul class="sub-menu">
+                            <li><a href="/service.html">Services</a></li>
+                            <li>
+                              <a href="/service-details.html">Service Details</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="has-menu">
+                          <a href="#">
+                            Portfolio
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                          <ul class="sub-menu">
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li>
+                              <a href="/portfolio-details.html">Portfolio Details</a>
+                            </li>
+                            <li>
+                              <a href="/portfolio-details-2.html">Portfolio Details 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-menu">
+                      <a href="#">
+                        Blogs
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                        <li><a href="/blog.html">Blogs</a></li>
+                        <li><a href="/blog-2.html">Blogs 2</a></li>
+                        <li>
+                          <a href="/blog-details.html">Blog Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 text-end">
+              <div class="header__menu-btns  d-flex align-items-center  gap-5 movement-wrapper d-none d-lg-block">
+                <a href="/contact.html" class="theme-btn style1 move-item"
+                  >Get Started
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+                <!-- <button class="toggle-sidebar" type="button">
+                  <i class="fa-solid fa-bars"></i>
+                </button> -->
+              </div>
+              <div
+                class="header__menu-btns d-flex align-items-center justify-content-end d-lg-none gap-2"
+              >
+                <button class="toggle-sidebar" type="button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Mobile Menu start                            -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="mobile-menu ">
+      <div class="menu-backdrop"></div>
+      <div class="main-menu-mobile">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="nav-logo">
+            <a href="index.html"><img src="./assets/images/logo/logo.svg" alt="logo" title="logo"></a>
+          </div>
+          <div class="close-btn toggle-sidebar"><i class="fa fa-solid fa-close"></i></div>
+        </div>
+        <div id="mobile-nav">
+           
+          </div>
+      </div>
+    </div>
+    <main > 
+    <!-- Hero area  -->
+    <section class="hero bg-black  section-padding-bottom">
+      <div class="container">
+        <div class="hero__title-wrap">
+          <h1 class="hero__title text-align-center electroBounce">Developer</h1>
+        </div>
+        <div class="row align-items-center row-margin-top">
+          <div class="col-xl-6 d-none d-xl-block position-relative movement-wrapper">
+            <div class="hero__circle">
+              <img
+                class="rotate360"
+                src="./assets/images/hero-bander-shape.png"
+                alt="shape"
+              />
+            </div>
+            <div class="move-item" style="overflow: hidden "   >
+              <img
+                src="./assets/images/banner.png"
+                class="img-fluid w-100"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="hero__content gsap-pop" data-delay=".5">
+              <div class="hero__content__title-wrap">
+                <h2 class="hero__content__title"> Hi. I am Jhon </h2>
+                <h2  class="hero__content__title"> Web Developer </h2>
+              </div>
+             
+              <div>
+                <div class="button-wrap gsap-pop" data-direction="right" >
+                  <a href="./contact.html" class="theme-btn style2"
+                    >More About Me
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="d-flex hero__counter__wrap row-margin-top ">
+                <div class="hero-counter " >
+                  <h3 class="text-stroke"><span class="count counter" data-target="225"  data-suffix="+">0</span></h3>
+                  <p>Projects Completed</p>
+                </div>
+                <div class="hero-counter " data-direction="right"> 
+                  <h3 class="text-stroke"><span class="count counter" data-target="45" data-suffix="+">0</span></h3>
+                  <p>Client Satisfied</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero area end  -->
+    <!-- Choose-us area -->
+    <section class="choose-us section-padding-top-bottom bg-2 ">
+      <div class="container">
+        <div class="choose-us__wrap">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-header section-header--text-left">
+                <span class="section-header__subtitle">Why Choose Me</span>
+                <h2 class="section-header__title pb-20 reveal-text relative">
+                  Connecting businesses with their audiences and individuals
+                  with their dreams.
+                </h2>
+                <div class="btn-wrapper mt-20">
+                  <a class="theme-btn style2" href="./portfolio.html"
+                    >Learn More
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i> </span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div data-delay=".3" class="col-12 section-padding-top gsap-pop"> 
+              <div class="brand-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-7.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-4.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-11.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-7.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-4.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-11.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-7.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-4.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-11.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-7.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-4.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-11.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-7.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-4.png" alt="brand" />
+                  </div>
+                  <div class="swiper-slide single-brand-slide">
+                    <img src="./assets/images/brand-1-11.png" alt="brand" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Choose-us area end -->
+    <!-- About area -->
+    <section class="about bg-black  section-padding-top-bottom  ">
+      <div class="container">
+        <div class="about__wrap overflow-hidden">
+          <div class="row">
+            <div class="col-md-7 " >
+              <div class="about__content gsap-pop" data-direction=" left" >
+                <div class="section-header ">
+                  <span class="section-header__subtitle move-anim"> About </span>
+                  <h2 class="section-header__title pb-20 move-anim">
+                    Digital agency for your business
+                  </h2>
+                  <p class="section-header__desc move-anim">
+                    Since 1985 Reed has pioneere specialist recruitment,
+                    sourcing knowledgeable, skilled professional pioneered
+                    speciali larong recruitment, sourcing larong into the head
+                    infor their.
+                  </p>
+                </div>
+                <div class="about__content__checklist gsap-pop">
+                  <ul>
+                    <li class="about__content__checklist-item">
+                      <span
+                        ><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.1473 23.352C12.144 23.352 12.1402 23.352 12.1369 23.352C12.0013 23.3493 11.8733 23.2913 11.7814 23.1918L2.40471 12.9958C2.24392 12.8208 2.22916 12.5572 2.36971 12.3653C2.51025 12.1739 2.76619 12.1082 2.98166 12.2089L11.5638 16.2273C11.636 16.2612 11.7213 16.2448 11.7765 16.1874L24.8676 2.50512C25.0448 2.31973 25.3346 2.2995 25.5359 2.45919C25.7371 2.61887 25.7836 2.90544 25.6431 3.12036L12.6209 23.0693C12.6023 23.0983 12.5804 23.1245 12.5563 23.1491L12.4989 23.2065C12.4054 23.2995 12.2785 23.352 12.1473 23.352Z" fill="#262626"/>
+                        </svg></span
+                      ><span class="about__content__checklist-item__text"
+                        >35+ Professional Team Members</span
+                      >
+                    </li>
+                    <li class="about__content__checklist-item">
+                      <span
+                        ><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.1473 23.352C12.144 23.352 12.1402 23.352 12.1369 23.352C12.0013 23.3493 11.8733 23.2913 11.7814 23.1918L2.40471 12.9958C2.24392 12.8208 2.22916 12.5572 2.36971 12.3653C2.51025 12.1739 2.76619 12.1082 2.98166 12.2089L11.5638 16.2273C11.636 16.2612 11.7213 16.2448 11.7765 16.1874L24.8676 2.50512C25.0448 2.31973 25.3346 2.2995 25.5359 2.45919C25.7371 2.61887 25.7836 2.90544 25.6431 3.12036L12.6209 23.0693C12.6023 23.0983 12.5804 23.1245 12.5563 23.1491L12.4989 23.2065C12.4054 23.2995 12.2785 23.352 12.1473 23.352Z" fill="#262626"/>
+</svg></span
+                      ><span class="about__content__checklist-item__text"
+                        >Any Business Problem Solving</span
+                      >
+                    </li>
+                    <li class="about__content__checklist-item">
+                      <span
+                        ><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.1473 23.352C12.144 23.352 12.1402 23.352 12.1369 23.352C12.0013 23.3493 11.8733 23.2913 11.7814 23.1918L2.40471 12.9958C2.24392 12.8208 2.22916 12.5572 2.36971 12.3653C2.51025 12.1739 2.76619 12.1082 2.98166 12.2089L11.5638 16.2273C11.636 16.2612 11.7213 16.2448 11.7765 16.1874L24.8676 2.50512C25.0448 2.31973 25.3346 2.2995 25.5359 2.45919C25.7371 2.61887 25.7836 2.90544 25.6431 3.12036L12.6209 23.0693C12.6023 23.0983 12.5804 23.1245 12.5563 23.1491L12.4989 23.2065C12.4054 23.2995 12.2785 23.352 12.1473 23.352Z" fill="#262626"/>
+</svg>   </span
+                      ><span class="about__content__checklist-item__text"
+                        >Implement Business Pro</span
+                      >
+                      
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn-wrapper gsap-pop" data-direction="right">
+                  <a class="theme-btn style2" href="./about-me.html"
+                    >Learn More
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i> </span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 gsap-pop" data-direction="right">
+              <div class="about__inner-section "  >
+                <div class="about-thumb">
+                  <div class="about-thumb__one">
+                    <img
+                      src="./assets/images/about-thumb1_1.DGLrr_Pf.jpg"
+                      alt="thumb"
+                    />
+                  </div>
+                  <div class="about-thumb__shape3">
+                    <img
+                      src="./assets/images/wcuShape1_2.DEqsjbl2.png"
+                      alt="shape"
+                    />
+                  </div>
+                  <div class="about-thumb__shape4">
+                    <img src="./assets/images/svg/dots-shape.svg" alt="shape" />
+                  </div>
+                </div>
+                <div class="about-thumb">
+                  <div class="about-thumb__two">
+                    <img
+                      src="./assets/images/about-thumb1_2.7LtO8nnF.jpg"
+                      alt="thumb"
+                    />
+                  </div>
+
+                  <div class="about-thumb__shape1">
+                    <img
+                      class="rotate360"
+                      src="./assets/images/about-shape.png"
+                      alt="shape"
+                    />
+                  </div>
+                  <div class="about-thumb__shape2">
+                    <img
+                      src="./assets/images/wcuShape1_2.DEqsjbl2.png"
+                      alt="shape"
+                    />
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+    <!-- About area end -->
+    <!-- service area -->
+    <section class="service  bg-2  section-padding-top-bottom">
+      <div class="container">
+        <div class="service__wrap">
+          <div class="row align-items-md-center">
+            <div class="col-12 col-md-9 gsap-pop">
+              <div class="section-header">
+                <span class="section-header__subtitle"> My Services</span>
+                <h2 class="section-header__title pb-20">
+                  Make your brand exceptional
+                </h2>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 text-md-end ">
+              <div class="btn-wrapper">
+                <a class="theme-btn style2" href="./service.html"
+                  >Learn More
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i> </span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="service__items row-padding-top">
+            <div class="service__single-item gsap-pop">
+              <a class="service__link" href="#">
+                <div
+                  class="service__box service__box-hover d-lg-flex justify-content-between align-items-end gap-2 gap-lg-3"
+                >
+                  <span class="service__number ">(01)</span>
+                  <h4 class="service__title">Digital Branding</h4>
+                  <img
+                    src="./assets/images/service-1-1.png"
+                    alt="service"
+                  />
+                  <p>
+                    Capturing moments through the lens, this portfolio includes
+                    landscape, portrait.
+                  </p>
+                  <div class="theme-btn-round">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="align-items-end d-lg-flex d-none justify-content-between service__box"
+                >
+                  <span class="service__number">(01)</span>
+                  <h2 class="service__title">Digital Branding</h2>
+                  <div class="theme-btn-round ms-auto">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="service__single-item gsap-pop">
+              <a class="service__link" href="#">
+                <div
+                  class="service__box service__box-hover d-lg-flex justify-content-between align-items-end gap-2 gap-lg-3"
+                >
+                  <span class="service__number ">(02)</span>
+                  <h4 class="service__title">3D Design</h4>
+                  <img
+                    src="./assets/images/service-1-1.png"
+                    alt="service"
+                  />
+                  <p>
+                    Capturing moments through the lens, this portfolio includes
+                    landscape, portrait.
+                  </p>
+                  <div class="theme-btn-round">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="align-items-end d-lg-flex d-none justify-content-between service__box"
+                >
+                  <span class="service__number">(02)</span>
+                  <h2 class="service__title">3D Design</h2>
+                  <div class="theme-btn-round ms-auto">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="service__single-item gsap-pop">
+              <a class="service__link" href="#">
+                <div
+                  class="service__box service__box-hover d-lg-flex justify-content-between align-items-end gap-2 gap-lg-3"
+                >
+                  <span class="service__number ">(03)</span>
+                  <h4 class="service__title">UI/UX Design</h4>
+                  <img
+                    src="./assets/images/service-1-1.png"
+                    alt="service"
+                  />
+                  <p>
+                    Capturing moments through the lens, this portfolio includes
+                    landscape, portrait.
+                  </p>
+                  <div class="theme-btn-round">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="align-items-end d-lg-flex d-none justify-content-between service__box"
+                >
+                  <span class="service__number">(03)</span>
+                  <h2 class="service__title">UI/UX Design</h2>
+                  <div class="theme-btn-round ms-auto">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="service__single-item gsap-pop">
+              <a class="service__link" href="#">
+                <div
+                  class="service__box service__box-hover d-lg-flex justify-content-between align-items-end gap-2 gap-lg-3"
+                >
+                  <span class="service__number ">(04)</span>
+                  <h4 class="service__title">Web Design</h4>
+                  <img
+                    src="./assets/images/service-1-1.png"
+                    alt="service"
+                  />
+                  <p>
+                    Capturing moments through the lens, this portfolio includes
+                    landscape, portrait.
+                  </p>
+                  <div class="theme-btn-round">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="align-items-end d-lg-flex d-none justify-content-between service__box"
+                >
+                  <span class="service__number">(04)</span>
+                  <h2 class="service__title">Web Design</h2>
+                  <div class="theme-btn-round ms-auto">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="service__single-item gsap-pop">
+              <a class="service__link" href="#">
+                <div
+                  class="service__box service__box-hover d-lg-flex justify-content-between align-items-end gap-2 gap-lg-3"
+                >
+                  <span class="service__number ">(05)</span>
+                  <h4 class="service__title">Web Development</h4>
+                  <img
+                    src="./assets/images/service-1-1.png"
+                    alt="service"
+                  />
+                  <p>
+                    Capturing moments through the lens, this portfolio includes
+                    landscape, portrait.
+                  </p>
+                  <div class="theme-btn-round">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="align-items-end d-lg-flex d-none justify-content-between service__box"
+                >
+                  <span class="service__number">(05)</span>
+                  <h2 class="service__title">Web Development</h2>
+                  <div class="theme-btn-round ms-auto">
+                    <span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service area  -->
+   <!-- section marquee start -->
+    <!-- <div class="section_marquee section_marquee_2 pb-30 pt-30">
+      <div class="container-fluid">
+          <div  class="js-marquee-wrapper d-flex">
+          
+        <div class="d-flex ">
+
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+        </div>
+        <div  class="d-flex ">
+
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+
+          <div class="js-marquee" >
+            <img src="./assets/images/marquee-2.png" alt="">
+            <h2>80+ Team Members </h2>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div> -->
+     <!-- section marquee end-->
+   
+    <!-- Video player area  -->
+     <section class="video-player-block bg-black">
+       <section class="video-player ">
+         <div class="container-fluid g-0  relative">
+          <img  class="video-player-shape-1  video-player-shape-1--top" src="./assets/images/video-shape-1.png" >
+          <img  class="video-player-shape-1  video-player-shape-1--bottom" src="./assets/images/video-shape-1.png" >
+         <div class="video-player__wrap" data-bg="">
+        
+           <video class="video-player__video" muted loop>
+             <source src="./assets/videos/developer.mp4" type="video/mp4">
+           </video>
+           <!-- <img class="video-player__video" src="./assets/images/971.jpg" alt="" > -->
+           <button class="video-player__play-btn ">
+             <i class="fa-solid fa-play"></i>
+           </button>
+         </div>
+
+        </div>
+       </section>
+     </section>
+     <!-- Video player area end  -->
+    <!-- Portfolio area start -->
+     <section class="portfolio section-padding-top-bottom bg-black">
+      <div class="container">
+        <div class="row justify-content-center ">
+          <div class="col-12 col-md-8">
+            <div class="section-header section-header--text-center section-header--py-100">
+              <span class="section-header__subtitle move-anim "> MY Portfolio</span>
+              <h2 class="section-header__title pb-20 move-anim ">
+                Visit my Portfolio
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items row-margin-top">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-30">
+              <div class="portfolio__item  item-popup " data-delay=".05" data-title="Paper Book Covers" data-category="Designing">
+                <a href="./portfolio-details.html">
+                  <div data-animation="fade" data-animation-start-scale="1.8" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <img src="./assets/images/portfolio/portfolio-1.jpg" class="w-100" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+              <div class="portfolio__item  item-popup" data-delay=".6" data-title="Luxury Skincare Product Mockup" data-category="Packaging Design">
+                <a href="./portfolio-details.html">
+                  <div data-animation="fade" data-animation-start-scale="1.8" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <img src="./assets/images/portfolio/portfolio-2.jpg" class="w-100" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+              <div class="portfolio__item  item-popup" data-delay=".7" data-title="Abstract Geometric Cubes" data-category="3D Design">
+                <a href="./portfolio-details.html">
+                  <div data-animation="fade" data-animation-start-scale="1.8" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <img src="./assets/images/portfolio/portfolio-3.jpg" class="w-100" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+              <div class="portfolio__item  item-popup" data-delay=".5" data-title="Minimalist Cylinder Display" data-category="3D Design">
+                <a href="./portfolio-details.html">
+                  <div data-animation="fade" data-animation-start-scale="1.8" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <img src="./assets/images/portfolio/portfolio-4.jpg" class="w-100" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+              <div class="portfolio__item  item-popup" data-delay=".6" data-title="Sleek Grip Display" data-category="Minimalist Design">
+                <a href="./portfolio-details.html">
+                  <div data-animation="fade" data-animation-start-scale="1.8" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <img src="./assets/images/portfolio/portfolio-5.jpg" class="w-100" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+              <div class="portfolio__item  item-popup" data-delay=".7" data-title="Modern Square Invitation" data-category="Mockup">
+                <a href="./portfolio-details.html">
+                  <div data-animation="fade" data-animation-start-scale="1.8" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <img src="./assets/images/portfolio/portfolio-6.jpg" class="w-100" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" text-center gsap-pop movement-wrapper mt-60 "  style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+          <a href="./portfolio.html" class="theme-btn_circle style2 btn_moveing_hover  move-item m-auto"><span>See All <br>Recent Projects</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio area end -->
+    <!-- Testimonial area  -->
+    <section class="testimonial section-padding-top-bottom bg-2 hero-one ">
+      <div class="container-fluid">
+        <div class="testimonial__wrap">
+          <div class="row justify-content-center gsap-pop">
+            <div class="col-12 col-md-8">
+              <div class="section-header section-header--text-center section-header--py-100">
+                <span class="section-header__subtitle  ">Testimonial</span>
+                <h2 class="section-header__title pb-20  ">
+                  Craft unique identities that stand out
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__slider testimonial__slider-active swiper ">
+            <div class="testimonial__slide__wrap testimonial-slider swiper-wrapper">
+              <div class=" swiper-slide testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-1.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Courtney Henry</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial__slide bg-3">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-2.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Guy Hawkins</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-3.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Ralph Edwards</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-1.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Courtney Henry</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial__slide bg-3">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-2.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Guy Hawkins</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-3.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Ralph Edwards</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="testimonial__navigation d-md-none">
+            <div class="testimonial__prev"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="testimonial__next"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <!-- <div class="testimonial__slider testimonial__slider-active swiper d-block d-md-none">
+            <div class="swiper-wrapper">
+              <div class=" swiper-slide testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-1.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Courtney Henry</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class=" swiper-slide  testimonial__slide bg-3">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-2.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Guy Hawkins</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class=" swiper-slide  testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-3.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Ralph Edwards</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class=" swiper-slide  testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-1.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Courtney Henry</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class=" swiper-slide  testimonial__slide bg-3">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-2.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Guy Hawkins</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="  swiper-slide testimonial__slide bg-3 ">
+                <div class="testimonial__slide__ratings-stars">
+                  <ul>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li class="checked"><i class="fa-solid fa-star"></i></li>
+                    <li ><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+                  <div class="testimonial__slide__content-wrap">
+                  <p class="testimonial__slide__text">
+                    “Financial planners help people to gain knowledge aboutw
+                    toio invest and save their money in the most efficient way
+                    ever. Many people all of across the Financial know”
+                  </p>
+                </div>
+                <div class="testimonial__author">
+                  <div class="testimonial__author__avater">
+                    <img src="./assets/images/avatar-3.png" alt="avatar" />
+                  </div>
+                  <div class="testimonial__author__info">
+                    <h4 class="testimonial__author__name">Ralph Edwards</h4>
+                    <span class="testimonial__author__designation"
+                      >Nursing Assistant</span
+                    >
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <div class="testimonial__navigation">
+              <div class="testimonial__prev"><i class="fa-solid fa-arrow-left"></i></div>
+              <div class="testimonial__next"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial area end  -->
+     
+    <!-- Blog section start -->
+    <section class="blog section-padding-top-bottom bg-2">
+      <div class="container">
+        <div class="row   align-items-md-center">
+          <div class="col-12 col-md-8 gsap-pop">
+            <div class="section-header  gsap-pop">
+              <!-- <span class="section-header__subtitle"> Latest blog</span> -->
+              <h2 class="section-header__title pb-20 move-anim">
+                Latest blog  Insights
+              </h2>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <div class="btn-wrapper">
+              <a class="theme-btn style2" href="./blog-2.html"
+                >View all
+                <span>
+                  <i class="fa-solid fa-arrow-right"></i> </span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="single-blog__wrap row-margin-top">
+         <div class="row ">
+           <div class="col-12 col-md-6 col-lg-4 mb-10  ">
+            <!-- Post -->
+              <div class="single-blog  gsap-pop" data-delay=".5" data-direction="left">
+              <div class="single-blog__image-wrap ">
+            
+                <a class="single-blog__thumb" href="#">
+                  <img src="./assets/images/blog/blog-1.jpg" alt="">
+                </a>
+                <!-- Card Overlay -->
+                <div class="single-blog__overlay top fade-down">
+                  <div class="logo">
+                    <img src="./assets/images/blog/blog-logo.svg" alt="">
+                  </div>
+                  <div class="single-blog__meta d-flex flex-column ms-3">
+                    <span>Posted by</span>
+                    <span class="single-blog__author"><strong>themeland</strong></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="single-blog__content mt-3">
+              
+                  <div class="single-blog__post-meta d-flex">
+                    <span class="single-blog__post-date"><i class="fa fa-clock me-1"></i>August 20, 2024</span>
+                  </div>
+                  <div class="single-blog__terms">
+                    <a class="single-blog__badge" href="#">Branding</a>
+                    <a class="single-blog__badge" href="#">Design</a>
+                    <a class="single-blog__badge" href="#">Trends</a>
+                  </div>
+                  <h4 class="single-blog__title ">
+                    <a href="#">The Future of Digital Design - Trends to Watch</a>
+                  </h4>
+              </div>
+              
+            </div> 
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-10   ">
+              <!-- Post -->
+                <div class="single-blog  gsap-pop" data-delay=".5">
+                <div class="single-blog__image-wrap ">
+              
+                  <a class="single-blog__thumb" href="#">
+                    <img src="./assets/images/blog/blgo-2.jpg" alt="">
+                  </a>
+                  <!-- Card Overlay -->
+                  <div class="single-blog__overlay top fade-down">
+                    <div class="logo">
+                      <img src="./assets/images/blog/blog-logo.svg" alt="">
+                    </div>
+                    <div class="single-blog__meta d-flex flex-column ms-3">
+                      <span>Posted by</span>
+                      <span class="single-blog__author"><strong>themeland</strong></span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="single-blog__content mt-3">
+                
+                    <div class="single-blog__post-meta d-flex">
+                      <span class="single-blog__post-date"><i class="fa fa-clock me-1"></i>August 20, 2024</span>
+                    </div>
+                    <div class="single-blog__terms">
+                      <a class="single-blog__badge" href="#">Branding</a>
+                      <a class="single-blog__badge" href="#">Design</a>
+                      <a class="single-blog__badge" href="#">Trends</a>
+                    </div>
+                    <h4 class="single-blog__title ">
+                      <a href="#">The Future of Digital Design - Trends to Watch</a>
+                    </h4>
+                   
+                </div>
+                
+              </div> 
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-10   ">
+                <!-- Post -->
+                  <div class="single-blog  gsap-pop" data-direction="right">
+                  <div class="single-blog__image-wrap ">
+                
+                    <a class="single-blog__thumb" href="#">
+                      <img src="./assets/images/blog/blog-3.jpg" alt="">
+                    </a>
+                    <!-- Card Overlay -->
+                    <div class="single-blog__overlay top fade-down">
+                      <div class="logo">
+                        <img src="./assets/images/blog/blog-logo.svg" alt="">
+                      </div>
+                      <div class="single-blog__meta d-flex flex-column ms-3">
+                        <span>Posted by</span>
+                        <span class="single-blog__author"><strong>themeland</strong></span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="single-blog__content mt-3">
+                  
+                      <div class="single-blog__post-meta d-flex">
+                        <span class="single-blog__post-date"><i class="fa fa-clock me-1"></i>August 20, 2024</span>
+                      </div>
+                      <div class="single-blog__terms">
+                        <a class="single-blog__badge" href="#">Branding</a>
+                        <a class="single-blog__badge" href="#">Design</a>
+                        <a class="single-blog__badge" href="#">Trends</a>
+                      </div>
+                      <h4 class="single-blog__title ">
+                        <a href="#">The Future of Digital Design - Trends to Watch</a>
+                      </h4>
+                      
+                  </div>
+                  
+                </div> 
+                </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+     <!-- Blog section end -->
+    </main>
+    <!-- Footer area start -->
+     <footer class="footer footer-bg section-padding-top-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="footer-widget">
+              <div class="footer-widget__logo">
+
+                <img src="./assets/images/logo/logo.svg" alt="logo">
+              </div>
+            <h2 class="footer-widget__title move-anim" >We develop all
+              solutions for the
+              finance future</h2>
+            <div class="footer-social-links gsap-pop">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+          <div class=" col-xl-2 col-md-3 col-sm-6 d-block d-md-flex justify-content-center">
+            <div class="footer-widget">
+              <h4 class="footer-widget__menu-title move-anim">Quick Links</h4>
+              <ul class="footer-widget__menu gsap-pop" data-delay=".03">
+                <li><a href="./#">About Me</a></li>
+                <li><a href="./contact.html.html">Contact Us</a></li>
+                <li><a href="./team.html">Our Members</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./faq.html">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class=" col-xl-2 col-md-3 col-sm-6 d-block d-md-flex justify-content-center">
+            <div class="footer-widget">
+              <h4 class="footer-widget__menu-title move-anim">Services</h4>
+              <ul class="footer-widget__menu gsap-pop">
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Accomodation</a></li>
+                <li>
+                  <a href="#">Financial Planning</a>
+                </li>
+                <li><a href="#">Digital Planning</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12 flex-xl-end mt-10 ">
+            <div class="footer-widget"> 
+              <div class="footer-widget__info gsap-pop" data-direction="right">
+                <i class="fa fa-solid fa-phone"></i>
+                <div class="footer-widget__info-content">
+                  <p>24/7 Our Support</p>
+                  <h3>+532 321 33 33</h3>
+                </div>
+              </div>
+              <div class="footer-widget__info gsap-pop " data-direction="right" data-delay=".03">
+                <i class="fa fo-solid   fa-envelope"></i>
+                <div class="footer-widget__info-content">
+                  <p>Send Your Message</p>
+                  <h3>yourdomain@gmail.com</h3>
+                </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer copyright area start -->
+    <footer class="footer__copyright footer-copy-bg">
+      <div class="container">
+        <div class=" d-flex justify-content-md-between justify-content-center ">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms And Conditions</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <p>Copyright © 2025. All Rights Reserved</p>
+        </div>
+      </div>
+      
+      <!-- Footer copyright area end -->
+    </footer>
+    <!-- Footer area end-->
+  <!-- </div> -->
+
+
+    <!-- ========================= js start =================== -->
+    <script
+      src="https://kit.fontawesome.com/e767b7df0a.js"
+      crossorigin="anonymous"
+    ></script>
+       <!-- Link Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- Link to Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <!-- GSAP Core CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script> -->
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Text split -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- Gsap all animation -->
+    <script src="./assets/js/gsap-script.js"></script>
+     <!-- Main js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

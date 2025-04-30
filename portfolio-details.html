@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devfolio| Portfolio</title>
+    <!--  Font-awesome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Main css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Preloader                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="preloader">
+      <button class="theme-btn style1 rounded-0 preloaderCls">
+        Cancel Preloader
+      </button>
+      <div class="preloader-inner">
+        <img src="./assets/images/logo/logo.svg" alt="logo" />
+        <span class="loader"></span>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Mouse Cursor                              -->
+    <!-- -----------------------------------------------------------------------  -->
+    <div class="d-none d-lg-block" id="cursor"></div>
+    <div class="d-none d-lg-block" id="cursor-border"></div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Progress                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="progress-wrap d-md-block">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 69.4775;
+          "
+        ></path>
+      </svg>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Portfolio titles Area start                   -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="portfolio__titles" style="left: 233px; top: 407px">
+      <span>Designing</span>
+      <p>Paper Book Covers</p>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Header Area start                            -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- <div id="scroll-container">  -->
+    <header id="header" class="header bg-black">
+      <div class="container">
+        <div class="header__main">
+          <div class="row align-items-center justify-content-md-between">
+            <div class="col-md-3 col-6">
+              <a class="header__logo" href="/">
+                <img src="./assets/images/logo/logo.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="col-md-6 d-none d-lg-block">
+              <div class="header__main-menu">
+                <nav id="navbarNav" class="circle nav-bg">
+                  <ul>
+                    <li class="has-menu">
+                      <a href="#">
+                        Home
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                        <li><a href="/">Home 1</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/about-me.html"> About Me </a>
+                    </li>
+                    <li class="has-menu active">
+                      <a href="#">
+                        Pages
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                        <li class="has-menu">
+                          <a href="#">
+                            Services
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                          <ul class="sub-menu">
+                            <li><a href="/service.html">Services</a></li>
+                            <li>
+                              <a href="/service-details.html"
+                                >Service Details</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="has-menu">
+                          <a href="#">
+                            Portfolio
+                            <i class="fa-solid fa-angle-down"></i>
+                          </a>
+                          <ul class="sub-menu">
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+
+                            <li>
+                              <a href="/portfolio-details.html"
+                                >Portfolio Details</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-menu">
+                      <a href="#">
+                        Blogs
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                        <li><a href="/blog.html">Blogs</a></li>
+                        <li><a href="/blog-2.html">Blogs 2</a></li>
+                        <li>
+                          <a href="/blog-details">Blog Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 text-end">
+              <div
+                class="header__menu-btns d-flex align-items-center gap-5 movement-wrapper d-none d-lg-block"
+              >
+                <a href="/contact.html" class="theme-btn style1 move-item"
+                  >Get Started
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+                <!-- <button class="toggle-sidebar" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                  </button> -->
+              </div>
+              <div
+                class="header__menu-btns d-flex align-items-center justify-content-end d-lg-none gap-2"
+              >
+                <button class="toggle-sidebar" type="button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Mobile Menu start                            -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <div class="main-menu-mobile">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img src="./assets/images/logo/logo.svg" alt="logo" title="logo"
+            /></a>
+          </div>
+          <div class="close-btn toggle-sidebar">
+            <i class="fa fa-solid fa-close"></i>
+          </div>
+        </div>
+        <div id="mobile-nav"></div>
+      </div>
+    </div>
+    <main>
+      <!-- Bread Crumb Section  -->
+      <section class="breadcrumb__block bg-2">
+        <div
+          class="background-image"
+          style="
+            background-image: url('./assets/images/breadcrumb-bg-texture.png');
+          "
+        ></div>
+        <div class="shape-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 330 343"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M139.193 127.282L48.7275 41.8034L29.6572 64.1109L120.084 149.65L2.57048 132.416L0.572672 163.167L118.09 180.479L18.4159 238.07L34.2536 265.52L133.974 207.991L90.2112 318.411L117.835 332.074L161.669 221.679L190.533 342.751L219.392 337.408L190.596 216.314L281.062 301.792L300.133 279.484L209.706 193.945L327.201 211.177L327.219 211.18L329.217 180.428L211.7 163.117L311.374 105.525L295.536 78.075L195.815 135.604L239.579 25.1839L211.955 11.5209L168.12 121.916L139.258 0.849981L110.4 6.1966L139.193 127.282Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <div class="shape-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 305 286"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M111.465 161.16L27.8448 231.841L45.4712 250.706L129.141 180.065L102.521 281.102L129.208 285.872L155.896 184.839L196.443 277.638L221.997 266.491L181.509 173.658L273.737 222.773L288.397 199.967L196.198 150.792L304.878 137.463L303.045 111.71L194.352 124.977L277.973 54.295L260.346 35.4303L176.676 106.071L203.293 5.05087L203.297 5.03486L176.61 0.264795L149.922 101.298L109.375 8.4988L83.8205 19.6454L124.308 112.479L32.0808 63.3637L17.4204 86.1693L109.619 135.344L0.944083 148.672L2.7808 174.426L111.465 161.16Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="breadcrumb__box">
+                <h1 class="breadcrumb__title">
+                  <span>Portfolios details</span>
+                </h1>
+                <nav
+                  class="breadcrumb__nav"
+                  style="--bs-breadcrumb-divider: '|'"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="/">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Portfolios
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Bread Crumb end -->
+       <!-- Bread Crumb 2 start -->
+       <!-- <section class="project-header">
+        <h1>E-Commerce Platform</h1>
+        <div class="project-meta">
+            <span><i class="far fa-calendar"></i> March 2023</span>
+            <span><i class="far fa-clock"></i> 4 months</span>
+            <span><i class="fas fa-user"></i> Client: ShopCorp</span>
+        </div>
+        <div class="project-tags">
+            <span class="tag">Web Development</span>
+            <span class="tag">E-Commerce</span>
+            <span class="tag">Full Stack</span>
+            <span class="tag">Responsive Design</span>
+        </div>
+        <img src="https://placehold.co/1200x600" alt="Project Hero Image" class="project-hero">
+    </section> -->
+        <!-- Bread Crumb 2 end -->
+      <!-- Portfolio area start -->
+      <section class="project-page bg-black section-padding-top-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="project-details__thumb" href="#">
+                <img src="./assets/images/blog/blog-1.jpg" alt="" />
+              </div>
+              <h1 class="project-details__title move-anim">
+                 The Future of Digital Design - Trends to Watch
+              </h1>
+              <div class="project-details__post-content">
+                  <p>Developed a custom e-commerce platform for ShopCorp, a mid-sized retail company looking to expand their online presence. The platform features a modern, user-friendly interface with robust backend functionality to handle high traffic volumes and complex inventory management.</p>
+                  
+                  <h2>Challenge</h2>
+                  <p>The client needed a solution that could integrate with their existing ERP system while providing a seamless shopping experience across devices. Key challenges included implementing real-time inventory updates, secure payment processing, and a personalized recommendation engine.</p>
+                  
+                  <img src="./assets/images/portfolio/portfolio-single.jpg" alt="Project Screenshot 1">
+                  
+                  <h2>Solution</h2>
+                  <p>Built a React.js frontend with a Node.js/Express backend and MongoDB database. Implemented microservices architecture for scalability. Key features include:</p>
+                  <ul>
+                      <li>JWT-based authentication with role-based access control</li>
+                      <li>Product search with filters and sorting</li>
+                      <li>Shopping cart with persistent storage</li>
+                      <li>Stripe integration for payments</li>
+                      <li>Admin dashboard for inventory management</li>
+                      <li>Product recommendation engine using collaborative filtering</li>
+                  </ul>
+                  
+                  <img src="./assets/images/portfolio/portfolio-2.jpg" alt="Project Screenshot 2">
+                  
+                  <h2>Results</h2>
+                  <p>The platform launched successfully with:</p>
+                  <ul>
+                      <li>40% increase in conversion rate compared to previous solution</li>
+                      <li>99.9% uptime during peak holiday season</li>
+                      <li>Average page load time under 1.5 seconds</li>
+                      <li>Seamless integration with client's ERP system</li>
+                  </ul>
+                  <h2>Lessons Learned</h2>
+                  <p>This project reinforced the importance of thorough load testing before launch. We initially underestimated the database requirements which caused performance issues during testing. After optimizing queries and adding appropriate indexes, we achieved the desired performance metrics.</p>
+              </div>
+              <div class="navigation-controls-2  row-margin-top">
+                <a href="#" class="nav-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Previous
+                </a>
+                <a href="#" class="nav-button">
+                    Next 
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-sidebar">
+                <div class="widget"> 
+
+                  <div class="widget-card   gsap-pop">
+                    <h3 class="widget-card__title">Project Links</h3>
+                    <div class="widget-card-project-links">
+                      <ul>
+                        <li>
+                          <a href="#"> Live Demo  <i class="fas fa-external-link-alt"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"> GitHub Repository <i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"> Case Study (PDF) <i class="fas fa-file-alt"></i></a>
+                        </li>
+                      </ul>
+                 
+                  </div>
+                  </div>
+                  
+                  <div class="widget-card   gsap-pop ">
+                    <h3 class="widget-card__title">Technologies Used</h3>
+           
+                      <div class="widget-card-tech-stack">
+                        <ul>
+                          <li>  <i class="fab fa-react"></i>
+                            <span>React</span></li>
+                          <li>     <i class="fab fa-node-js"></i>
+                            <span>Node.js</span></li>
+                          <li>  <i class="fas fa-database"></i>
+                            <span>MongoDB</span></li>
+                          <li><i class="fas fa-server"></i>
+                            <span>Express</span></li>
+                          <li>     <i class="fab fa-aws"></i>
+                            <span>AWS</span></li>
+                          <li>     <i class="fas fa-shield-alt"></i>
+                            <span>Stripe</span></li>
+                            <li>      <i class="fas fa-mobile-alt"></i>
+                              <span>Responsive</span></li>
+                              <li>   <i class="fas fa-chart-line"></i>
+                                <span>Analytics</span></li>
+                        </ul>
+
+                       
+                           
+                          </div>
+                    </div>
+                    <div class="widget-card   gsap-pop ">
+                      <h3 class="widget-card__title">Project Details</h3>
+                        <div class="widget-card-project-deatils">
+                          <p><strong>Team Size:</strong> 5 (2 frontend, 2 backend, 1 designer)</p>
+                          <p><strong>My Role:</strong> Lead Developer</p>
+                          <p><strong>Methodology:</strong> Agile (2-week sprints)</p>
+                          <p><strong>Testing:</strong> Jest, Cypress</p>
+                          <p><strong>CI/CD:</strong> GitHub Actions</p>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+    
+      <!-- Portfolio area end -->
+    </main>
+    <!-- Footer area start -->
+    <footer class="footer footer-bg section-padding-top-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="footer-widget">
+              <div class="footer-widget__logo">
+                <img src="./assets/images/logo/logo.svg" alt="logo" />
+              </div>
+              <h2 class="footer-widget__title move-anim">
+                We develop all solutions for the finance future
+              </h2>
+              <div class="footer-social-links gsap-pop">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-2 col-md-3 col-sm-6 d-block d-md-flex justify-content-center"
+          >
+            <div class="footer-widget">
+              <h4 class="footer-widget__menu-title move-anim">Quick Links</h4>
+              <ul class="footer-widget__menu gsap-pop" data-delay=".03">
+                <li><a href="./#">About Me</a></li>
+                <li><a href="./contact.html.html">Contact Us</a></li>
+                <li><a href="./team.html">Our Members</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./faq.html">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-xl-2 col-md-3 col-sm-6 d-block d-md-flex justify-content-center"
+          >
+            <div class="footer-widget">
+              <h4 class="footer-widget__menu-title move-anim">Services</h4>
+              <ul class="footer-widget__menu gsap-pop">
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Accomodation</a></li>
+                <li>
+                  <a href="#">Financial Planning</a>
+                </li>
+                <li><a href="#">Digital Planning</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12 flex-xl-end mt-10">
+            <div class="footer-widget">
+              <div class="footer-widget__info gsap-pop" data-direction="right">
+                <i class="fa fa-solid fa-phone"></i>
+                <div class="footer-widget__info-content">
+                  <p>24/7 Our Support</p>
+                  <h3>+532 321 33 33</h3>
+                </div>
+              </div>
+              <div
+                class="footer-widget__info gsap-pop"
+                data-direction="right"
+                data-delay=".03"
+              >
+                <i class="fa fo-solid fa-envelope"></i>
+                <div class="footer-widget__info-content">
+                  <p>Send Your Message</p>
+                  <h3>yourdomain@gmail.com</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer copyright area start -->
+    <footer class="footer__copyright footer-copy-bg">
+      <div class="container">
+        <div class="d-flex justify-content-md-between justify-content-center">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms And Conditions</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <p>Copyright © 2025. All Rights Reserved</p>
+        </div>
+      </div>
+
+      <!-- Footer copyright area end -->
+    </footer>
+    <!-- Footer area end-->
+    <!-- </div> -->
+
+    <!-- ========================= js start =================== -->
+    <script
+      src="https://kit.fontawesome.com/e767b7df0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Jquery JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- GSAP Core CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script> -->
+    <!-- Gsap flip animation  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Text split -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- Gsap all animation -->
+    <script src="./assets/js/gsap-script.js"></script>
+    <!-- Main js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
